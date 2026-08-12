@@ -1,7 +1,10 @@
 <html>
 <head>
+    <!-- Importa la hoja de estilos de Bootstrap 4.3.1 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Importa el script personalizado mywebscript.js -->
     <script src="./static/mywebscript.js"></script>
+    <!-- Define un estilo CSS para centrar encabezados -->
     <style>
         .center-heading {
             text-align: center;
@@ -9,24 +12,36 @@
     </style>
 </head>
 <body>
+    <!-- Crea una tarjeta con el contenido principal de la página -->
     <div class="card">
         <div class="card-body">
-            <h1 class="center-heading">NLP - Sentiment Analysis using BERT</h1> 
+            <!-- Encabezado principal del análisis de sentimiento -->
+            <h1 class="center-heading">NLP - Analisis de sentimiento usando BERT</h1> 
+            <!-- Contenedor para el formulario de entrada de texto -->
             <div style="padding: 25px 25px 25px 25px;">
             <h2 class="mb-3">
-                <label class="form-label">Please enter the text to be analyzed</label>
+                    <!-- Etiqueta y campo de entrada de texto -->
+                <label class="form-label">Inserta el texto a analizar</label>
                 <input type="textarea" class="form-control" id="textToAnalyze">
             </h2>
 
+                <!-- Contenedor para el botón de análisis -->
             <div style="padding: 25px 25px 25px 25px;">
-                <button onclick="RunSentimentAnalysis()" class="btn btn-secondary">Run Sentiment Analysis</button>
+                <button onclick="RunSentimentAnalysis()" class="btn btn-secondary">Arrancar analisis</button>
             </div>
+            </div>
+
+            <!-- Contenedor vacío para separación -->
             <div style="padding: 25px 25px 25px 25px;"></div>
+
+            <!-- Encabezado para el resultado del análisis -->
             <h2 class="mb-3">
-                <label class="form-label">Result of Sentiment Analysis</label>
+                <label class="form-label">Resultado del analisis</label>
             </h2>
 
+            <!-- Contenedor para mostrar el resultado del análisis -->
             <div id="system_response" style="padding: 25px 25px 25px 25px;"></div>
-        </div>
+    </div>
     </div>
 </body>
+</html>
